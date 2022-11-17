@@ -1,0 +1,505 @@
+
+
+body {
+		background: #ffffff;
+    font-family: 'Lora', serif;
+    font-style: normal;
+		font-weight: 300;
+    overflow-x: hidden;
+}
+
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 62px;
+    padding-bottom: 14px;
+    margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h2,h3 {
+  padding-bottom: 6px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+
+.btn-success:focus {
+  background-color: #000;
+  border-color: transparent;
+}
+
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #4d638c;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none !important;
+}
+a:hover, a:active, a:focus {
+  color: #4d638c;
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#about, 
+#gallery,
+#contact,
+#blog, 
+#blog-single-post {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.main-about,
+.main-single-post,
+.main-gallery,
+.main-contact {
+  height: 65vh;
+}
+
+.overlay {
+  
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  overflow: hidden;
+}
+
+
+
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+
+#home {
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.main-home {
+  background-color: white;
+  height: 100vh;
+}
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#home h4 {
+  color: #bfba55;
+}
+
+#home .btn {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  color: #444;
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+}
+
+#home .btn:hover {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/*
+  Variáveis
+*/
+
+:root {
+  --main-color: #c71919;
+  --link-color: #666666;
+  --text1: #999999;
+  --highligth-text: #333333;
+  --input-text: #555555;
+  --white-color: #FFFFFF;
+  --point-list: #CCCCCC;
+  --line-input: #D9D9D9;
+}
+
+/*
+  Fontes
+*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+/*
+  Zerar estilos
+*/
+
+* {
+  margin: 0px; 
+  padding: 0px; 
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
+}
+
+ul, li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+input, button {
+  outline: none !important;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*
+  Utilitários
+*/
+
+.text1 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: var(--text1);
+  line-height: 1.5;
+}
+
+.text2 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: var(--main-color);
+  line-height: 1.5;
+}
+
+.margin-bottom-35 {
+  margin-bottom: 35px;
+}
+
+.margin-top-35 {
+  margin-top: 35px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.margin-top-8 {
+  margin-top: 8px;
+}
+
+.margin-left-50 {
+  margin-left: 50px;
+}
+
+/*
+  Login
+*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: var(--white-color);  
+}
+
+.wrap-login {
+  width: 370px;
+  margin-right: 50px;
+  background: var(--white-color);
+}
+
+/*
+  Formulário
+*/
+
+.login-form {
+  width: 100%;
+}
+
+.login-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: var(--highligth-text);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/*
+  Input
+*/
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid var(--line-input);
+}
+
+.input-form {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: var(--input-text);
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: transparent;
+  padding: 0 5px;
+}
+
+.focus-input-form {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+  background: var(--main-color);
+}
+
+.focus-input-form::after {
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  color: var(--text1);
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  padding-left: 5px;
+  transition: all 0.4s;
+}
+
+.input-form:focus + .focus-input-form::after {
+  top: -20px;
+  font-size: 15px;
+}
+
+.input-form:focus + .focus-input-form::before {
+  width: 100%;
+}
+
+.has-val.input-form + .focus-input-form::after {
+  top: -20px;
+  font-size: 15px;
+}
+
+.has-val.input-form + .focus-input-form::before {
+  width: 100%;
+}
+
+/*
+  Botão
+*/
+
+.container-login-form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form-btn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.login-form-btn:hover  {
+  background-color: var(--highligth-text);
+}
+
+.form-check {
+  margin-top: 20px;
+}
+
+/*
+  Links - Login utils
+*/
+
+a {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--link-color);
+  margin: 0px;
+  transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--highligth-text);
+}
+
+/*
+  Login utils
+*/
+
+.login-utils {
+  margin-top: 20px;
+}
+
+.login-utils li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.login-utils li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--point-list);
+  top: 45%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+
+
+
+
+
+
